@@ -16,6 +16,10 @@ let config = Object.assign({}, baseConfig, {
   ],
   cache: true,
   devtool: 'eval-source-map',
+  stats: {
+    colors: true,
+    reaseons: false
+  },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
